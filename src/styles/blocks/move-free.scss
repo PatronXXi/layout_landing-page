@@ -1,0 +1,35 @@
+.move-free {
+  @include page-grid;
+
+  &__title {
+    text-align: left;
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: 1 / 4;
+    }
+
+    @include on-desktop {
+      grid-column: span 5;
+    }
+  }
+
+  &__description {
+    margin: 0;
+    margin-bottom: 92px;
+    grid-column: 1 / -1;
+
+    @include on-tablet {
+      grid-column: 4 / 7;
+    }
+
+    @include on-desktop {
+      grid-column: span 6;
+    }
+
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 140%;
+    color: $base-text-color-white;
+  }
+}

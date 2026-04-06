@@ -9,6 +9,8 @@ node_modules
 .DS_Store
 
 # Generated files
+*.css
+*.css.map
 backstop_data
 dist
 .cache
