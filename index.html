@@ -13,6 +13,11 @@
     crossorigin="anonymous"
     >
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+    rel="shortcut icon"
+    href="/src/images/icons/fav-logo.png"
+    type="image/x-icon"
+    >
     <link rel="stylesheet" href="./src/styles/style.scss"/>
   </head>
   <!-- #endregion -->
@@ -214,7 +219,7 @@
 
             <div class="contacts__wrapper">
               <div class="contact">
-                <article class="contact__input">
+                <form class="contact__input">
                   <input
                   type="text"
                   class="contact__input--item"
@@ -225,13 +230,9 @@
                   class="contact__input--item"
                   placeholder="Email"
                   >
-                  <textarea
-                  class="contact__input--item contact__input--item--big"
-                  placeholder="Message"
-                  >
-                  </textarea>
-                  <button class="contact__button">Send</button>
-                </article>
+                  <textarea class="contact__input--item contact__input--item--big" placeholder="Message"></textarea>
+                  <button type="submit" class="contact__button">Send</button>
+                </form>
                 <article class="contact__adress">
                   <div class="contact__adress--item">
                     <h3 class="contact__adress--title">Phone</h3>
