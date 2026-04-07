@@ -28,3 +28,32 @@
     @include hover(transform, scale(1.2));
   }
 }
+
+.icon--phone {
+  position: relative;
+  cursor: pointer;
+
+  &::before {
+    content: '+1 234 5555-55-55';
+    position: absolute;
+    left: -170px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    color: $base-text-color-white;
+    text-transform: uppercase;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+  }
+
+  &:hover::before {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+

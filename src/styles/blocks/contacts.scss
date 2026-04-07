@@ -25,6 +25,7 @@
       box-sizing: border-box;
 
       margin-bottom: 16px;
+      padding-inline: 16px;
       font-size: 14px;
       font-weight: 400;
       font-family: $font-family;
@@ -32,10 +33,6 @@
       height: 48px;
       border-radius: 40px;
       border-color: #f8f8fa;
-
-      &::placeholder {
-        padding-left: 16px;
-      }
 
       &:hover {
         border: 1px solid #d5d7de;
