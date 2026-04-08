@@ -61,6 +61,16 @@
         color: #292929;
       }
 
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        -webkit-text-fill-color: #292929;
+        box-shadow: 0 0 0 1000px #ffffff inset;
+        background-color: #ffffff !important;
+        transition: background-color 5000s ease-in-out 0s;
+      }
+
       &--big {
         height: 148px;
         border-radius: 16px;
