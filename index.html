@@ -219,7 +219,7 @@
 
             <div class="contacts__wrapper">
               <div class="contact">
-                <form class="contact__input">
+                <form onsubmit="this.reset(); return false;" class="contact__input">
                   <input
                   type="text"
                   class="contact__input--item"
@@ -244,7 +244,11 @@
                   </div>
                   <div class="contact__adress--item">
                     <h3 class="contact__adress--title">Address</h3>
-                    <a href="#" class="contact__adress--link">
+                    <a
+                    href="https://maps.google.com/maps?q=400+first+ave+suite+700+Minneapolis+MN+55401"
+                    class="contact__adress--link"
+                    target="_blank"
+                    >
                       400 first ave.
                       <br>suite 700
                       <br>Minneapolis, MN 55401
